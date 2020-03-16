@@ -1,0 +1,15 @@
+table {
+	border: 3px black;
+}
+td:hover {
+	background-color: WhiteSmoke;
+	color: SeaGreen;
+}
+tr, th {
+	background-color: LawnGreen;
+	color:White;
+}
+tr, td {
+	background-color: Gainsboro;
+	color: DarkGreen;
+}
