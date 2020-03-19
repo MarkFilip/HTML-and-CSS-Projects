@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Fire Emblem Lord Appreciation</title>
+		<link rel="stylesheet" type="text/css" href="./css/One_page_website.css">
 	</head>
 	<body>
 		<!--Nav-->
@@ -43,7 +44,7 @@
 					<div id="photos">
 						<h3>Photos</h3>
 						<p>Below are images of certain Fire Emblem lords using the art from their original game.</p>
-						<div>
+						<div class="char">
 							<div>
 								<p>Roy</p>
 								<img src="./images/Roy.png">
@@ -76,7 +77,7 @@
 					<div id="videos">
 						<h3>Videos</h3>
 						<p>Below are videos of certain Fire Emblem lords using their ultimate move or placing a final blow on a boss.</p>
-						<div>
+						<div class="char">
 							<div>
 								<p>Roy</p>
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/Vt7g2FQbJAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -112,17 +113,21 @@
 		
 		<!--Contact-->
 		<section>
-			<div>
+			<div class="form">
 				<div id="contact">
 					<h2>Contact</h2>
 					<p>For any edits or additions, fill out the form below:</p>
 						<div>
 							<form action="" method="get">
-								First Name:<input class="contact" type="text" name="Fname"><br>
-								Last Name:<input class="contact" type="text" name="Lname"><br>
-								Character:<input class="contact" type="text" name="Char"><br>
-								Change:<input class="contact" type="text" name="change"><br>
-								<input type="submit" value="Battle!">
+								<input type="text" name="Fname" placeholder="First Name">
+								<input type="text" name="Lname" placeholder="Last Name">
+								<input type="text" name="Character" placeholder="Character Name">
+								<div class="long">
+									<input type="text" name="change" placeholder="Addition or edit">
+								</div>
+								<div class="button">
+									<input type="submit" value="Battle!">
+								</div>
 							</form>
 						</div>
 				</div>
