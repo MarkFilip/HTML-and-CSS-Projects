@@ -44,32 +44,94 @@
 					<div id="photos">
 						<h3>Photos</h3>
 						<p>Below are images of certain Fire Emblem lords using the art from their original game.</p>
-						<div class="char">
-							<div>
-								<p>Roy</p>
-								<img src="./images/Roy.png">
+						<div class="row">
+							<div class="column">
+								<img src="./images/Roy.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							</div>
-							<div>
-								<p>Eliwood</p>
-								<img src="./images/Eliwood.png">
+							<div class="column">
+								<img src="./images/Eliwood.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
 							</div>
-							<div>
-								<p>Hector</p>
-								<img src="./images/Hector.png">
+							<div class="column">
+								<img src="./images/Hector.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
 							</div>
-							<div>
-								<p>Lyn</p>
-								<img src="./images/Lyn.png">
+							<div class="column">
+								<img src="./images/Lyn.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
 							</div>
-							<div>
-								<p>Alm</p>
-								<img src="./images/Alm.png">
+							<div class="column">
+								<img src="./images/Alm.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
 							</div>
-							<div>
-								<p>Celica</p>
-								<img src="./images/Celica.jpg">
+							<div class="column">
+								<img src="./images/Celica.jpg"onclick="openModal();currentSlide(6)" class="hover-shadow">
 							</div>
 						</div>
+
+						<!--Modal/ Lightbox-->
+						<div id="modal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+
+								<div class="Slides">
+									<div class="numbertext"> 1 / 6</div>
+									<img src="./images/Roy.png" style="width:100%">
+								</div>
+
+								<div class="Slides">
+									<div class="numbertext"> 2 / 6</div>
+									<img src="./images/Eliwood.png" style="width:100%">
+								</div>
+
+								<div class="Slides">
+									<div class="numbertext"> 3 / 6</div>
+									<img src="./images/Hector.png" style="width:100%">
+								</div>
+
+								<div class="Slides">
+									<div class="numbertext"> 4 / 6</div>
+									<img src="./images/Lyn.png" style="width:100%">
+								</div>
+
+								<div class="Slides">
+									<div class="numbertext"> 5 / 6</div>
+									<img src="./images/Alm.png" style="width:100%">
+								</div>
+
+								<div class="Slides">
+									<div class="numbertext"> 6 / 6</div>
+									<img src="./images/Celica.jpg" style="width:100%">
+								</div>
+							
+								<!--Next/Prev Controls-->
+								<a class="prev" onclick="plusSlides(-1)">&#x02AA6</a>
+								<a class="next" onclick="plusSlides(1)">&#x02AA7</a>
+
+								<!--Caption-->
+								<div class="caption-container">
+									<p id="caption"></p>
+								</div>
+
+								<!--Thumbnail image controls-->
+								<div class="column">
+									<img class="demo" src="./images/Roy.png" onclick="currentSlide(1)" alt="Roy from Fire Emblem">
+								</div>
+								<div class="column">
+									<img class="demo" src="./images/Eliwood.png" onclick="currentSlide(2)" alt="Eliwood from Fire Emblem">
+								</div>
+								<div class="column">
+									<img class="demo" src="./images/Hector.png" onclick="currentSlide(3)" alt="Hector from Fire Emblem">
+								</div>
+								<div class="column">
+									<img class="demo" src="./images/Lyn.png" onclick="currentSlide(4)" alt="Lyn from Fire Emblem">
+								</div>
+								<div class="column">
+									<img class="demo" src="./images/Alm.png" onclick="currentSlide(5)" alt="Alm from Fire Emblem">
+								</div>
+								<div class="column">
+									<img class="demo" src="./images/Celica.jpg"onclick="currentSlide(6)" alt="Celica from Fire Emblem">
+								</div>
+							</div>
+						</div>
+
+						<!--End Modal/ Lightbox-->
 					</div>
 					<!--End Photos-->
 					
@@ -141,7 +203,7 @@
 			<p>Contact by email</p>
 		</footer>
 		<!--End Footer-->
-		
+		<script src="./JS/one_page_website.js"></script>
 	</body>
 </html>
 					
